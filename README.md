@@ -4,13 +4,36 @@ A new chat to studies
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To add firebase in iOS was added at ios/Runner/info.plist:
 
-A few resources to get you started if this is your first Flutter project:
+    <key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.622590411513-ga05gfdfsdsptokho9panmahe4adljg1</string>
+			</array>
+		</dict>
+	</array>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+To use camera and gallery in iOS was added at ios/Runner/info.plist:
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Tirar fotos dos contatos.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Selecionar uma foto de contato da galeria.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Tirar fotos dos contatos.</string>
+
+
+Plugins that was used:
+
+  cupertino_icons: ^0.1.2
+  cloud_firestore: ^0.8.2+3
+  google_sign_in: ^3.2.4
+  firebase_auth: ^0.7.0
+  firebase_storage: ^1.0.4
+  image_picker: ^0.4.12+1
+
